@@ -3,15 +3,27 @@
 Manual editing may break compatibility.-->
 <pnml>
   <net type="http://www.informatik.hu-berlin.de/top/pntd/ptNetb" id="noID">
-    <place id="p12">
+    <place id="p10">
       <name>
-        <text>Ready for incoming transaction</text>
+        <text>p10</text>
         <graphics>
-          <offset x="890" y="240"/>
+          <offset x="1250" y="240"/>
         </graphics>
       </name>
       <graphics>
-        <position x="891" y="200"/>
+        <position x="1250" y="200"/>
+        <dimension x="40" y="40"/>
+      </graphics>
+    </place>
+    <place id="p12">
+      <name>
+        <text>Ready for enable incoming transaction</text>
+        <graphics>
+          <offset x="650" y="340"/>
+        </graphics>
+      </name>
+      <graphics>
+        <position x="650" y="300"/>
         <dimension x="40" y="40"/>
       </graphics>
     </place>
@@ -19,11 +31,11 @@ Manual editing may break compatibility.-->
       <name>
         <text>Ready for profile update</text>
         <graphics>
-          <offset x="880" y="110"/>
+          <offset x="650" y="440"/>
         </graphics>
       </name>
       <graphics>
-        <position x="881" y="65"/>
+        <position x="650" y="400"/>
         <dimension x="40" y="40"/>
       </graphics>
     </place>
@@ -31,11 +43,11 @@ Manual editing may break compatibility.-->
       <name>
         <text>Incoming transaction enabled</text>
         <graphics>
-          <offset x="1030" y="240"/>
+          <offset x="800" y="340"/>
         </graphics>
       </name>
       <graphics>
-        <position x="1032" y="200"/>
+        <position x="800" y="300"/>
         <dimension x="40" y="40"/>
       </graphics>
     </place>
@@ -43,35 +55,11 @@ Manual editing may break compatibility.-->
       <name>
         <text>Customer profile updated</text>
         <graphics>
-          <offset x="1030" y="110"/>
+          <offset x="800" y="440"/>
         </graphics>
       </name>
       <graphics>
-        <position x="1031" y="68"/>
-        <dimension x="40" y="40"/>
-      </graphics>
-    </place>
-    <place id="p16">
-      <name>
-        <text>Customer informed</text>
-        <graphics>
-          <offset x="1290" y="180"/>
-        </graphics>
-      </name>
-      <graphics>
-        <position x="1290" y="140"/>
-        <dimension x="40" y="40"/>
-      </graphics>
-    </place>
-    <place id="p15">
-      <name>
-        <text>Parallel task done</text>
-        <graphics>
-          <offset x="1170" y="180"/>
-        </graphics>
-      </name>
-      <graphics>
-        <position x="1170" y="140"/>
+        <position x="800" y="400"/>
         <dimension x="40" y="40"/>
       </graphics>
     </place>
@@ -79,11 +67,11 @@ Manual editing may break compatibility.-->
       <name>
         <text>Fraud</text>
         <graphics>
-          <offset x="1450" y="260"/>
+          <offset x="1100" y="440"/>
         </graphics>
       </name>
       <graphics>
-        <position x="1458" y="224"/>
+        <position x="1100" y="400"/>
         <dimension x="40" y="40"/>
       </graphics>
     </place>
@@ -91,11 +79,11 @@ Manual editing may break compatibility.-->
       <name>
         <text>No fraud</text>
         <graphics>
-          <offset x="1450" y="110"/>
+          <offset x="1100" y="240"/>
         </graphics>
       </name>
       <graphics>
-        <position x="1448" y="71"/>
+        <position x="1100" y="200"/>
         <dimension x="40" y="40"/>
       </graphics>
     </place>
@@ -103,23 +91,11 @@ Manual editing may break compatibility.-->
       <name>
         <text>Full access enabled</text>
         <graphics>
-          <offset x="1640" y="100"/>
+          <offset x="1400" y="340"/>
         </graphics>
       </name>
       <graphics>
-        <position x="1629" y="58"/>
-        <dimension x="40" y="40"/>
-      </graphics>
-    </place>
-    <place id="p21">
-      <name>
-        <text>Result registered</text>
-        <graphics>
-          <offset x="2150" y="260"/>
-        </graphics>
-      </name>
-      <graphics>
-        <position x="2152" y="222"/>
+        <position x="1400" y="300"/>
         <dimension x="40" y="40"/>
       </graphics>
     </place>
@@ -127,11 +103,11 @@ Manual editing may break compatibility.-->
       <name>
         <text>Pending for result</text>
         <graphics>
-          <offset x="1690" y="250"/>
+          <offset x="1250" y="440"/>
         </graphics>
       </name>
       <graphics>
-        <position x="1676" y="206"/>
+        <position x="1250" y="400"/>
         <dimension x="40" y="40"/>
       </graphics>
     </place>
@@ -139,11 +115,11 @@ Manual editing may break compatibility.-->
       <name>
         <text>Good result</text>
         <graphics>
-          <offset x="2290" y="210"/>
+          <offset x="1700" y="340"/>
         </graphics>
       </name>
       <graphics>
-        <position x="2290" y="170"/>
+        <position x="1700" y="300"/>
         <dimension x="40" y="40"/>
       </graphics>
     </place>
@@ -151,11 +127,11 @@ Manual editing may break compatibility.-->
       <name>
         <text>No results after 2 day</text>
         <graphics>
-          <offset x="1820" y="390"/>
+          <offset x="1400" y="540"/>
         </graphics>
       </name>
       <graphics>
-        <position x="1832" y="350"/>
+        <position x="1400" y="500"/>
         <dimension x="40" y="40"/>
       </graphics>
     </place>
@@ -163,23 +139,23 @@ Manual editing may break compatibility.-->
       <name>
         <text>Fraud confirmed</text>
         <graphics>
-          <offset x="2290" y="350"/>
+          <offset x="1700" y="540"/>
         </graphics>
       </name>
       <graphics>
-        <position x="2286" y="308"/>
+        <position x="1700" y="500"/>
         <dimension x="40" y="40"/>
       </graphics>
     </place>
     <place id="p24">
       <name>
-        <text>Full access enabled</text>
+        <text>Prepare for fraud review</text>
         <graphics>
-          <offset x="2480" y="170"/>
+          <offset x="950" y="340"/>
         </graphics>
       </name>
       <graphics>
-        <position x="2480" y="136"/>
+        <position x="950" y="300"/>
         <dimension x="40" y="40"/>
       </graphics>
     </place>
@@ -187,11 +163,11 @@ Manual editing may break compatibility.-->
       <name>
         <text>Ready for disabling incoming transaction</text>
         <graphics>
-          <offset x="2440" y="400"/>
+          <offset x="1850" y="640"/>
         </graphics>
       </name>
       <graphics>
-        <position x="2436" y="358"/>
+        <position x="1850" y="600"/>
         <dimension x="40" y="40"/>
       </graphics>
     </place>
@@ -199,11 +175,11 @@ Manual editing may break compatibility.-->
       <name>
         <text>Ready for disabling customer profile</text>
         <graphics>
-          <offset x="2440" y="300"/>
+          <offset x="1850" y="540"/>
         </graphics>
       </name>
       <graphics>
-        <position x="2436" y="261"/>
+        <position x="1850" y="500"/>
         <dimension x="40" y="40"/>
       </graphics>
     </place>
@@ -211,11 +187,11 @@ Manual editing may break compatibility.-->
       <name>
         <text>Incoming transactions disabled</text>
         <graphics>
-          <offset x="2520" y="400"/>
+          <offset x="2000" y="640"/>
         </graphics>
       </name>
       <graphics>
-        <position x="2518" y="360"/>
+        <position x="2000" y="600"/>
         <dimension x="40" y="40"/>
       </graphics>
     </place>
@@ -223,11 +199,11 @@ Manual editing may break compatibility.-->
       <name>
         <text>Customer profile disabled</text>
         <graphics>
-          <offset x="2540" y="300"/>
+          <offset x="2000" y="540"/>
         </graphics>
       </name>
       <graphics>
-        <position x="2540" y="260"/>
+        <position x="2000" y="500"/>
         <dimension x="40" y="40"/>
       </graphics>
     </place>
@@ -235,11 +211,11 @@ Manual editing may break compatibility.-->
       <name>
         <text>Start</text>
         <graphics>
-          <offset x="10" y="300"/>
+          <offset x="50" y="240"/>
         </graphics>
       </name>
       <graphics>
-        <position x="9" y="258"/>
+        <position x="50" y="200"/>
         <dimension x="40" y="40"/>
       </graphics>
       <initialMarking>
@@ -250,11 +226,23 @@ Manual editing may break compatibility.-->
       <name>
         <text>Result received in 1 day</text>
         <graphics>
-          <offset x="1920" y="280"/>
+          <offset x="1400" y="640"/>
         </graphics>
       </name>
       <graphics>
-        <position x="1915" y="229"/>
+        <position x="1400" y="600"/>
+        <dimension x="40" y="40"/>
+      </graphics>
+    </place>
+    <place id="p3">
+      <name>
+        <text>p3</text>
+        <graphics>
+          <offset x="1400" y="240"/>
+        </graphics>
+      </name>
+      <graphics>
+        <position x="1400" y="200"/>
         <dimension x="40" y="40"/>
       </graphics>
     </place>
@@ -262,11 +250,11 @@ Manual editing may break compatibility.-->
       <name>
         <text>Registration done</text>
         <graphics>
-          <offset x="140" y="390"/>
+          <offset x="200" y="240"/>
         </graphics>
       </name>
       <graphics>
-        <position x="138" y="351"/>
+        <position x="200" y="200"/>
         <dimension x="40" y="40"/>
       </graphics>
     </place>
@@ -274,23 +262,11 @@ Manual editing may break compatibility.-->
       <name>
         <text>Credit check done</text>
         <graphics>
-          <offset x="310" y="390"/>
+          <offset x="350" y="240"/>
         </graphics>
       </name>
       <graphics>
-        <position x="311" y="351"/>
-        <dimension x="40" y="40"/>
-      </graphics>
-    </place>
-    <place id="p6">
-      <name>
-        <text>Credit result registered</text>
-        <graphics>
-          <offset x="510" y="400"/>
-        </graphics>
-      </name>
-      <graphics>
-        <position x="524" y="359"/>
+        <position x="350" y="200"/>
         <dimension x="40" y="40"/>
       </graphics>
     </place>
@@ -298,11 +274,11 @@ Manual editing may break compatibility.-->
       <name>
         <text>Ready for register result</text>
         <graphics>
-          <offset x="2040" y="260"/>
+          <offset x="1550" y="440"/>
         </graphics>
       </name>
       <graphics>
-        <position x="2038" y="222"/>
+        <position x="1550" y="400"/>
         <dimension x="40" y="40"/>
       </graphics>
     </place>
@@ -310,11 +286,11 @@ Manual editing may break compatibility.-->
       <name>
         <text>Result is ok</text>
         <graphics>
-          <offset x="720" y="170"/>
+          <offset x="500" y="340"/>
         </graphics>
       </name>
       <graphics>
-        <position x="710" y="141"/>
+        <position x="500" y="300"/>
         <dimension x="40" y="40"/>
       </graphics>
     </place>
@@ -322,11 +298,11 @@ Manual editing may break compatibility.-->
       <name>
         <text>Result is not ok</text>
         <graphics>
-          <offset x="730" y="410"/>
+          <offset x="500" y="140"/>
         </graphics>
       </name>
       <graphics>
-        <position x="720" y="369"/>
+        <position x="500" y="100"/>
         <dimension x="40" y="40"/>
       </graphics>
     </place>
@@ -334,11 +310,11 @@ Manual editing may break compatibility.-->
       <name>
         <text>Ready for sending rejection letter</text>
         <graphics>
-          <offset x="2620" y="300"/>
+          <offset x="2150" y="540"/>
         </graphics>
       </name>
       <graphics>
-        <position x="2619" y="260"/>
+        <position x="2150" y="500"/>
         <dimension x="40" y="40"/>
       </graphics>
     </place>
@@ -346,11 +322,23 @@ Manual editing may break compatibility.-->
       <name>
         <text>Ready for reporting to police</text>
         <graphics>
-          <offset x="2610" y="410"/>
+          <offset x="2150" y="440"/>
         </graphics>
       </name>
       <graphics>
-        <position x="2610" y="370"/>
+        <position x="2150" y="400"/>
+        <dimension x="40" y="40"/>
+      </graphics>
+    </place>
+    <place id="p31">
+      <name>
+        <text>p31</text>
+        <graphics>
+          <offset x="1250" y="340"/>
+        </graphics>
+      </name>
+      <graphics>
+        <position x="1250" y="300"/>
         <dimension x="40" y="40"/>
       </graphics>
     </place>
@@ -358,11 +346,11 @@ Manual editing may break compatibility.-->
       <name>
         <text>Police is reported</text>
         <graphics>
-          <offset x="2730" y="410"/>
+          <offset x="2300" y="440"/>
         </graphics>
       </name>
       <graphics>
-        <position x="2727" y="370"/>
+        <position x="2300" y="400"/>
         <dimension x="40" y="40"/>
       </graphics>
     </place>
@@ -370,11 +358,23 @@ Manual editing may break compatibility.-->
       <name>
         <text>Rejection letter sent</text>
         <graphics>
-          <offset x="2730" y="300"/>
+          <offset x="2300" y="540"/>
         </graphics>
       </name>
       <graphics>
-        <position x="2730" y="260"/>
+        <position x="2300" y="500"/>
+        <dimension x="40" y="40"/>
+      </graphics>
+    </place>
+    <place id="p36">
+      <name>
+        <text>p36</text>
+        <graphics>
+          <offset x="1850" y="340"/>
+        </graphics>
+      </name>
+      <graphics>
+        <position x="1850" y="300"/>
         <dimension x="40" y="40"/>
       </graphics>
     </place>
@@ -382,68 +382,87 @@ Manual editing may break compatibility.-->
       <name>
         <text>End Process</text>
         <graphics>
-          <offset x="2880" y="330"/>
+          <offset x="2450" y="240"/>
         </graphics>
       </name>
       <graphics>
-        <position x="2880" y="290"/>
+        <position x="2450" y="200"/>
         <dimension x="40" y="40"/>
       </graphics>
     </place>
+    <place id="p38">
+      <name>
+        <text>p38</text>
+        <graphics>
+          <offset x="2000" y="340"/>
+        </graphics>
+      </name>
+      <graphics>
+        <position x="2000" y="300"/>
+        <dimension x="40" y="40"/>
+      </graphics>
+    </place>
+    <place id="p37">
+      <name>
+        <text>p37</text>
+        <graphics>
+          <offset x="1850" y="440"/>
+        </graphics>
+      </name>
+      <graphics>
+        <position x="1850" y="400"/>
+        <dimension x="40" y="40"/>
+      </graphics>
+    </place>
+    <place id="p39">
+      <name>
+        <text>p39</text>
+        <graphics>
+          <offset x="2000" y="440"/>
+        </graphics>
+      </name>
+      <graphics>
+        <position x="2000" y="400"/>
+        <dimension x="40" y="40"/>
+      </graphics>
+    </place>
+    <transition id="t10_op_1">
+      <name>
+        <text>Merge parallel task</text>
+        <graphics>
+          <offset x="1470" y="240"/>
+        </graphics>
+      </name>
+      <graphics>
+        <position x="1475" y="200"/>
+        <dimension x="40" y="40"/>
+      </graphics>
+      <toolspecific tool="WoPeD" version="1.0">
+        <operator id="t10" type="102"/>
+        <time>0</time>
+        <timeUnit>1</timeUnit>
+        <orientation>3</orientation>
+      </toolspecific>
+    </transition>
     <transition id="t12">
       <name>
         <text>Send rejection letter</text>
         <graphics>
-          <offset x="830" y="510"/>
+          <offset x="570" y="140"/>
         </graphics>
       </name>
       <graphics>
-        <position x="833" y="473"/>
+        <position x="575" y="100"/>
         <dimension x="40" y="40"/>
       </graphics>
       <toolspecific tool="WoPeD" version="1.0">
-        <trigger id="" type="200">
+        <trigger id="" type="201">
           <graphics>
-            <position x="843" y="453"/>
+            <position x="585" y="78"/>
             <dimension x="24" y="22"/>
           </graphics>
         </trigger>
-        <transitionResource organizationalUnitName="Stockholm Branch" roleName="CRM Officer">
-          <graphics>
-            <position x="843" y="426"/>
-            <dimension x="60" y="22"/>
-          </graphics>
-        </transitionResource>
         <time>25</time>
-        <timeUnit>1</timeUnit>
-        <orientation>1</orientation>
-      </toolspecific>
-    </transition>
-    <transition id="t11">
-      <name>
-        <text>Enable full access</text>
-        <graphics>
-          <offset x="2370" y="190"/>
-        </graphics>
-      </name>
-      <graphics>
-        <position x="2365" y="150"/>
-        <dimension x="40" y="40"/>
-      </graphics>
-      <toolspecific tool="WoPeD" version="1.0">
-        <trigger id="" type="200">
-          <graphics>
-            <position x="2375" y="130"/>
-            <dimension x="24" y="22"/>
-          </graphics>
-        </trigger>
-        <transitionResource organizationalUnitName="Stockholm Branch" roleName="Accounting Assistant">
-          <graphics>
-            <position x="2375" y="103"/>
-            <dimension x="60" y="22"/>
-          </graphics>
-        </transitionResource>
-        <time>10</time>
         <timeUnit>1</timeUnit>
         <orientation>1</orientation>
       </toolspecific>
@@ -452,23 +471,23 @@ Manual editing may break compatibility.-->
       <name>
         <text>Enable customer profile update</text>
         <graphics>
-          <offset x="950" y="100"/>
+          <offset x="720" y="440"/>
         </graphics>
       </name>
       <graphics>
-        <position x="949" y="57"/>
+        <position x="725" y="400"/>
         <dimension x="40" y="40"/>
       </graphics>
       <toolspecific tool="WoPeD" version="1.0">
         <trigger id="" type="200">
           <graphics>
-            <position x="959" y="37"/>
+            <position x="735" y="378"/>
             <dimension x="24" y="22"/>
           </graphics>
         </trigger>
         <transitionResource organizationalUnitName="Stockholm Branch" roleName="CRM Officer">
           <graphics>
-            <position x="959" y="10"/>
+            <position x="720" y="355"/>
             <dimension x="60" y="22"/>
           </graphics>
         </transitionResource>
@@ -481,11 +500,11 @@ Manual editing may break compatibility.-->
       <name>
         <text>Start parallel task</text>
         <graphics>
-          <offset x="820" y="180"/>
+          <offset x="570" y="340"/>
         </graphics>
       </name>
       <graphics>
-        <position x="820" y="140"/>
+        <position x="575" y="300"/>
         <dimension x="40" y="40"/>
       </graphics>
       <toolspecific tool="WoPeD" version="1.0">
@@ -497,13 +516,13 @@ Manual editing may break compatibility.-->
     </transition>
     <transition id="t16_op_1">
       <name>
-        <text>Merge parallel task</text>
+        <text>Merge parallel task &amp; Initiate another parallel task</text>
         <graphics>
-          <offset x="1090" y="180"/>
+          <offset x="870" y="340"/>
         </graphics>
       </name>
       <graphics>
-        <position x="1090" y="140"/>
+        <position x="875" y="300"/>
         <dimension x="40" y="40"/>
       </graphics>
       <toolspecific tool="WoPeD" version="1.0">
@@ -517,23 +536,23 @@ Manual editing may break compatibility.-->
       <name>
         <text>Enable incoming transactions</text>
         <graphics>
-          <offset x="960" y="300"/>
+          <offset x="720" y="340"/>
         </graphics>
       </name>
       <graphics>
-        <position x="961" y="261"/>
+        <position x="725" y="300"/>
         <dimension x="40" y="40"/>
       </graphics>
       <toolspecific tool="WoPeD" version="1.0">
         <trigger id="" type="200">
           <graphics>
-            <position x="971" y="241"/>
+            <position x="735" y="278"/>
             <dimension x="24" y="22"/>
           </graphics>
         </trigger>
         <transitionResource organizationalUnitName="Stockholm Branch" roleName="Accounting Assistant">
           <graphics>
-            <position x="971" y="214"/>
+            <position x="720" y="255"/>
             <dimension x="60" y="22"/>
           </graphics>
         </transitionResource>
@@ -546,24 +565,24 @@ Manual editing may break compatibility.-->
       <name>
         <text>Review potential fraud</text>
         <graphics>
-          <offset x="1350" y="180"/>
+          <offset x="1020" y="340"/>
         </graphics>
       </name>
       <graphics>
-        <position x="1354" y="140"/>
+        <position x="1025" y="300"/>
         <dimension x="40" y="40"/>
       </graphics>
       <toolspecific tool="WoPeD" version="1.0">
         <trigger id="" type="200">
           <graphics>
-            <position x="1364" y="120"/>
+            <position x="1035" y="278"/>
             <dimension x="24" y="22"/>
           </graphics>
         </trigger>
         <operator id="t18" type="104"/>
         <transitionResource organizationalUnitName="Stockholm Branch" roleName="Fraud Investigator">
           <graphics>
-            <position x="1364" y="93"/>
+            <position x="1020" y="255"/>
             <dimension x="60" y="22"/>
           </graphics>
         </transitionResource>
@@ -576,24 +595,24 @@ Manual editing may break compatibility.-->
       <name>
         <text>Review potential fraud</text>
         <graphics>
-          <offset x="1350" y="180"/>
+          <offset x="1020" y="340"/>
         </graphics>
       </name>
       <graphics>
-        <position x="1354" y="140"/>
+        <position x="1025" y="300"/>
         <dimension x="40" y="40"/>
       </graphics>
       <toolspecific tool="WoPeD" version="1.0">
         <trigger id="" type="200">
           <graphics>
-            <position x="1364" y="120"/>
+            <position x="1035" y="278"/>
             <dimension x="24" y="22"/>
           </graphics>
         </trigger>
         <operator id="t18" type="104"/>
         <transitionResource organizationalUnitName="Stockholm Branch" roleName="Fraud Investigator">
           <graphics>
-            <position x="1364" y="93"/>
+            <position x="1020" y="255"/>
             <dimension x="60" y="22"/>
           </graphics>
         </transitionResource>
@@ -602,56 +621,27 @@ Manual editing may break compatibility.-->
         <orientation>1</orientation>
       </toolspecific>
     </transition>
-    <transition id="t17">
-      <name>
-        <text>Inform customer</text>
-        <graphics>
-          <offset x="1230" y="180"/>
-        </graphics>
-      </name>
-      <graphics>
-        <position x="1230" y="140"/>
-        <dimension x="40" y="40"/>
-      </graphics>
-      <toolspecific tool="WoPeD" version="1.0">
-        <trigger id="" type="200">
-          <graphics>
-            <position x="1240" y="120"/>
-            <dimension x="24" y="22"/>
-          </graphics>
-        </trigger>
-        <transitionResource organizationalUnitName="Stockholm Branch" roleName="CRM Officer">
-          <graphics>
-            <position x="1240" y="93"/>
-            <dimension x="60" y="22"/>
-          </graphics>
-        </transitionResource>
-        <time>25</time>
-        <timeUnit>1</timeUnit>
-        <orientation>1</orientation>
-      </toolspecific>
-    </transition>
     <transition id="t19">
       <name>
         <text>Request external fraud investigation</text>
         <graphics>
-          <offset x="1560" y="270"/>
+          <offset x="1170" y="440"/>
         </graphics>
       </name>
       <graphics>
-        <position x="1557" y="230"/>
+        <position x="1175" y="400"/>
         <dimension x="40" y="40"/>
       </graphics>
       <toolspecific tool="WoPeD" version="1.0">
         <trigger id="" type="200">
           <graphics>
-            <position x="1567" y="210"/>
+            <position x="1185" y="378"/>
             <dimension x="24" y="22"/>
           </graphics>
         </trigger>
         <transitionResource organizationalUnitName="Stockholm Branch" roleName="Fraud Investigator">
           <graphics>
-            <position x="1567" y="183"/>
+            <position x="1170" y="355"/>
             <dimension x="60" y="22"/>
           </graphics>
         </transitionResource>
@@ -664,23 +654,23 @@ Manual editing may break compatibility.-->
       <name>
         <text>Inform customer</text>
         <graphics>
-          <offset x="1710" y="100"/>
+          <offset x="1320" y="240"/>
         </graphics>
       </name>
       <graphics>
-        <position x="1716" y="57"/>
+        <position x="1325" y="200"/>
         <dimension x="40" y="40"/>
       </graphics>
       <toolspecific tool="WoPeD" version="1.0">
         <trigger id="" type="200">
           <graphics>
-            <position x="1726" y="36"/>
+            <position x="1335" y="178"/>
             <dimension x="24" y="22"/>
           </graphics>
         </trigger>
         <transitionResource organizationalUnitName="Stockholm Branch" roleName="CRM Officer">
           <graphics>
-            <position x="1726" y="9"/>
+            <position x="1320" y="155"/>
             <dimension x="60" y="22"/>
           </graphics>
         </transitionResource>
@@ -693,23 +683,23 @@ Manual editing may break compatibility.-->
       <name>
         <text>Enable full access</text>
         <graphics>
-          <offset x="1540" y="100"/>
+          <offset x="1320" y="340"/>
         </graphics>
       </name>
       <graphics>
-        <position x="1536" y="63"/>
+        <position x="1325" y="300"/>
         <dimension x="40" y="40"/>
       </graphics>
       <toolspecific tool="WoPeD" version="1.0">
         <trigger id="" type="200">
           <graphics>
-            <position x="1546" y="43"/>
+            <position x="1335" y="278"/>
             <dimension x="24" y="22"/>
           </graphics>
         </trigger>
         <transitionResource organizationalUnitName="Stockholm Branch" roleName="Accounting Assistant">
           <graphics>
-            <position x="1546" y="16"/>
+            <position x="1320" y="255"/>
             <dimension x="60" y="22"/>
           </graphics>
         </transitionResource>
@@ -722,24 +712,24 @@ Manual editing may break compatibility.-->
       <name>
         <text>Wait for result</text>
         <graphics>
-          <offset x="1830" y="270"/>
+          <offset x="1320" y="540"/>
         </graphics>
       </name>
       <graphics>
-        <position x="1830" y="230"/>
+        <position x="1325" y="500"/>
         <dimension x="40" y="40"/>
       </graphics>
       <toolspecific tool="WoPeD" version="1.0">
         <trigger id="" type="200">
           <graphics>
-            <position x="1840" y="210"/>
+            <position x="1335" y="478"/>
             <dimension x="24" y="22"/>
           </graphics>
         </trigger>
         <operator id="t23" type="104"/>
         <transitionResource organizationalUnitName="Stockholm Branch" roleName="Dummy">
           <graphics>
-            <position x="1840" y="183"/>
+            <position x="1320" y="455"/>
             <dimension x="60" y="22"/>
           </graphics>
         </transitionResource>
@@ -752,24 +742,24 @@ Manual editing may break compatibility.-->
       <name>
         <text>Wait for result</text>
         <graphics>
-          <offset x="1830" y="270"/>
+          <offset x="1320" y="540"/>
         </graphics>
       </name>
       <graphics>
-        <position x="1830" y="230"/>
+        <position x="1325" y="500"/>
         <dimension x="40" y="40"/>
       </graphics>
       <toolspecific tool="WoPeD" version="1.0">
         <trigger id="" type="200">
           <graphics>
-            <position x="1840" y="210"/>
+            <position x="1335" y="478"/>
             <dimension x="24" y="22"/>
           </graphics>
         </trigger>
         <operator id="t23" type="104"/>
         <transitionResource organizationalUnitName="Stockholm Branch" roleName="Dummy">
           <graphics>
-            <position x="1840" y="183"/>
+            <position x="1320" y="455"/>
             <dimension x="60" y="22"/>
           </graphics>
         </transitionResource>
@@ -778,31 +768,20 @@ Manual editing may break compatibility.-->
         <orientation>1</orientation>
       </toolspecific>
     </transition>
-    <transition id="t22">
+    <transition id="t22_op_1">
       <name>
-        <text>Inform customer</text>
+        <text>Initiate arallel task</text>
         <graphics>
-          <offset x="2630" y="170"/>
+          <offset x="1770" y="340"/>
         </graphics>
       </name>
       <graphics>
-        <position x="2632" y="133"/>
+        <position x="1775" y="300"/>
         <dimension x="40" y="40"/>
       </graphics>
       <toolspecific tool="WoPeD" version="1.0">
-        <trigger id="" type="200">
-          <graphics>
-            <position x="2642" y="113"/>
-            <dimension x="24" y="22"/>
-          </graphics>
-        </trigger>
-        <transitionResource organizationalUnitName="Stockholm Branch" roleName="CRM Officer">
-          <graphics>
-            <position x="2642" y="86"/>
-            <dimension x="60" y="22"/>
-          </graphics>
-        </transitionResource>
-        <time>10</time>
+        <operator id="t22" type="101"/>
+        <time>0</time>
         <timeUnit>1</timeUnit>
         <orientation>1</orientation>
       </toolspecific>
@@ -811,23 +790,23 @@ Manual editing may break compatibility.-->
       <name>
         <text>Disable customer profile update</text>
         <graphics>
-          <offset x="2490" y="280"/>
+          <offset x="1920" y="540"/>
         </graphics>
       </name>
       <graphics>
-        <position x="2490" y="238"/>
+        <position x="1925" y="500"/>
         <dimension x="40" y="40"/>
       </graphics>
       <toolspecific tool="WoPeD" version="1.0">
         <trigger id="" type="200">
           <graphics>
-            <position x="2500" y="218"/>
+            <position x="1935" y="478"/>
             <dimension x="24" y="22"/>
           </graphics>
         </trigger>
         <transitionResource organizationalUnitName="Stockholm Branch" roleName="CRM Officer">
           <graphics>
-            <position x="2500" y="191"/>
+            <position x="1920" y="455"/>
             <dimension x="60" y="22"/>
           </graphics>
         </transitionResource>
@@ -840,11 +819,11 @@ Manual editing may break compatibility.-->
       <name>
         <text>Initiate parallel task</text>
         <graphics>
-          <offset x="2380" y="340"/>
+          <offset x="1770" y="540"/>
         </graphics>
       </name>
       <graphics>
-        <position x="2374" y="303"/>
+        <position x="1775" y="500"/>
         <dimension x="40" y="40"/>
       </graphics>
       <toolspecific tool="WoPeD" version="1.0">
@@ -858,11 +837,11 @@ Manual editing may break compatibility.-->
       <name>
         <text>Merge parallel task and initiate another parallel task</text>
         <graphics>
-          <offset x="2570" y="360"/>
+          <offset x="2070" y="440"/>
         </graphics>
       </name>
       <graphics>
-        <position x="2570" y="320"/>
+        <position x="2075" y="400"/>
         <dimension x="40" y="40"/>
       </graphics>
       <toolspecific tool="WoPeD" version="1.0">
@@ -876,23 +855,23 @@ Manual editing may break compatibility.-->
       <name>
         <text>Disable incoming transactions</text>
         <graphics>
-          <offset x="2480" y="440"/>
+          <offset x="1920" y="640"/>
         </graphics>
       </name>
       <graphics>
-        <position x="2478" y="400"/>
+        <position x="1925" y="600"/>
         <dimension x="40" y="40"/>
       </graphics>
       <toolspecific tool="WoPeD" version="1.0">
         <trigger id="" type="200">
           <graphics>
-            <position x="2488" y="380"/>
+            <position x="1935" y="578"/>
             <dimension x="24" y="22"/>
           </graphics>
         </trigger>
         <transitionResource organizationalUnitName="Stockholm Branch" roleName="Accounting Assistant">
           <graphics>
-            <position x="2488" y="353"/>
+            <position x="1920" y="555"/>
             <dimension x="60" y="22"/>
           </graphics>
         </transitionResource>
@@ -905,26 +884,20 @@ Manual editing may break compatibility.-->
       <name>
         <text>Send rejection letter</text>
         <graphics>
-          <offset x="2680" y="280"/>
+          <offset x="2220" y="540"/>
         </graphics>
       </name>
       <graphics>
-        <position x="2680" y="239"/>
+        <position x="2225" y="500"/>
         <dimension x="40" y="40"/>
       </graphics>
       <toolspecific tool="WoPeD" version="1.0">
-        <trigger id="" type="200">
+        <trigger id="" type="201">
           <graphics>
-            <position x="2690" y="219"/>
+            <position x="2235" y="478"/>
             <dimension x="24" y="22"/>
           </graphics>
         </trigger>
-        <transitionResource organizationalUnitName="Stockholm Branch" roleName="CRM Officer">
-          <graphics>
-            <position x="2690" y="192"/>
-            <dimension x="60" y="22"/>
-          </graphics>
-        </transitionResource>
         <time>25</time>
         <timeUnit>1</timeUnit>
         <orientation>1</orientation>
@@ -934,23 +907,23 @@ Manual editing may break compatibility.-->
       <name>
         <text>Report to police</text>
         <graphics>
-          <offset x="2670" y="430"/>
+          <offset x="2220" y="440"/>
         </graphics>
       </name>
       <graphics>
-        <position x="2670" y="390"/>
+        <position x="2225" y="400"/>
         <dimension x="40" y="40"/>
       </graphics>
       <toolspecific tool="WoPeD" version="1.0">
         <trigger id="" type="200">
           <graphics>
-            <position x="2680" y="370"/>
+            <position x="2235" y="378"/>
             <dimension x="24" y="22"/>
           </graphics>
         </trigger>
         <transitionResource organizationalUnitName="Stockholm Branch" roleName="Fraud Investigator">
           <graphics>
-            <position x="2680" y="343"/>
+            <position x="2220" y="355"/>
             <dimension x="60" y="22"/>
           </graphics>
         </transitionResource>
@@ -963,27 +936,39 @@ Manual editing may break compatibility.-->
       <name>
         <text>Send a reminder</text>
         <graphics>
-          <offset x="1720" y="400"/>
+          <offset x="1470" y="340"/>
         </graphics>
       </name>
       <graphics>
-        <position x="1725" y="353"/>
+        <position x="1475" y="300"/>
         <dimension x="40" y="40"/>
       </graphics>
       <toolspecific tool="WoPeD" version="1.0">
-        <trigger id="" type="200">
+        <trigger id="" type="201">
           <graphics>
-            <position x="1735" y="333"/>
+            <position x="1485" y="278"/>
             <dimension x="24" y="22"/>
           </graphics>
         </trigger>
-        <transitionResource organizationalUnitName="Stockholm Branch" roleName="Fraud Investigator">
-          <graphics>
-            <position x="1735" y="306"/>
-            <dimension x="60" y="22"/>
-          </graphics>
-        </transitionResource>
         <time>10</time>
+        <timeUnit>1</timeUnit>
+        <orientation>1</orientation>
+      </toolspecific>
+    </transition>
+    <transition id="t2_op_1">
+      <name>
+        <text>Parallel task</text>
+        <graphics>
+          <offset x="1170" y="240"/>
+        </graphics>
+      </name>
+      <graphics>
+        <position x="1175" y="200"/>
+        <dimension x="40" y="40"/>
+      </graphics>
+      <toolspecific tool="WoPeD" version="1.0">
+        <operator id="t2" type="101"/>
+        <time>0</time>
         <timeUnit>1</timeUnit>
         <orientation>1</orientation>
       </toolspecific>
@@ -992,17 +977,17 @@ Manual editing may break compatibility.-->
       <name>
         <text>Receive result</text>
         <graphics>
-          <offset x="1970" y="250"/>
+          <offset x="1470" y="440"/>
         </graphics>
       </name>
       <graphics>
-        <position x="1968" y="209"/>
+        <position x="1475" y="400"/>
         <dimension x="40" y="40"/>
       </graphics>
       <toolspecific tool="WoPeD" version="1.0">
         <trigger id="" type="201">
           <graphics>
-            <position x="1978" y="188"/>
+            <position x="1485" y="378"/>
             <dimension x="24" y="22"/>
           </graphics>
         </trigger>
@@ -1013,28 +998,22 @@ Manual editing may break compatibility.-->
     </transition>
     <transition id="t4">
       <name>
-        <text>Register customer request</text>
+        <text>Received customer  registration request</text>
         <graphics>
-          <offset x="70" y="300"/>
+          <offset x="120" y="340"/>
         </graphics>
       </name>
       <graphics>
-        <position x="60" y="260"/>
+        <position x="125" y="300"/>
         <dimension x="40" y="40"/>
       </graphics>
       <toolspecific tool="WoPeD" version="1.0">
-        <trigger id="" type="200">
+        <trigger id="" type="201">
           <graphics>
-            <position x="70" y="240"/>
+            <position x="135" y="278"/>
             <dimension x="24" y="22"/>
           </graphics>
         </trigger>
-        <transitionResource organizationalUnitName="Stockholm Branch" roleName="Clerk">
-          <graphics>
-            <position x="70" y="213"/>
-            <dimension x="60" y="22"/>
-          </graphics>
-        </transitionResource>
         <time>20</time>
         <timeUnit>1</timeUnit>
         <orientation>1</orientation>
@@ -1044,23 +1023,23 @@ Manual editing may break compatibility.-->
       <name>
         <text>Check customer credit</text>
         <graphics>
-          <offset x="220" y="300"/>
+          <offset x="270" y="240"/>
         </graphics>
       </name>
       <graphics>
-        <position x="218" y="260"/>
+        <position x="275" y="200"/>
         <dimension x="40" y="40"/>
       </graphics>
       <toolspecific tool="WoPeD" version="1.0">
         <trigger id="" type="200">
           <graphics>
-            <position x="228" y="240"/>
+            <position x="285" y="178"/>
             <dimension x="24" y="22"/>
           </graphics>
         </trigger>
         <transitionResource organizationalUnitName="Stockholm Branch" roleName="Credit Investigator">
           <graphics>
-            <position x="228" y="213"/>
+            <position x="270" y="155"/>
             <dimension x="60" y="22"/>
           </graphics>
         </transitionResource>
@@ -1069,112 +1048,72 @@ Manual editing may break compatibility.-->
         <orientation>1</orientation>
       </toolspecific>
     </transition>
-    <transition id="t6">
-      <name>
-        <text>Register credit result</text>
-        <graphics>
-          <offset x="420" y="300"/>
-        </graphics>
-      </name>
-      <graphics>
-        <position x="416" y="260"/>
-        <dimension x="40" y="40"/>
-      </graphics>
-      <toolspecific tool="WoPeD" version="1.0">
-        <trigger id="" type="200">
-          <graphics>
-            <position x="426" y="240"/>
-            <dimension x="24" y="22"/>
-          </graphics>
-        </trigger>
-        <transitionResource organizationalUnitName="Stockholm Branch" roleName="Credit Investigator">
-          <graphics>
-            <position x="426" y="213"/>
-            <dimension x="60" y="22"/>
-          </graphics>
-        </transitionResource>
-        <time>10</time>
-        <timeUnit>1</timeUnit>
-        <orientation>1</orientation>
-      </toolspecific>
-    </transition>
-    <transition id="t7">
-      <name>
-        <text>Register investigation result</text>
-        <graphics>
-          <offset x="2100" y="270"/>
-        </graphics>
-      </name>
-      <graphics>
-        <position x="2096" y="230"/>
-        <dimension x="40" y="40"/>
-      </graphics>
-      <toolspecific tool="WoPeD" version="1.0">
-        <trigger id="" type="200">
-          <graphics>
-            <position x="2106" y="210"/>
-            <dimension x="24" y="22"/>
-          </graphics>
-        </trigger>
-        <transitionResource organizationalUnitName="Stockholm Branch" roleName="Fraud Investigator">
-          <graphics>
-            <position x="2106" y="183"/>
-            <dimension x="60" y="22"/>
-          </graphics>
-        </transitionResource>
-        <time>20</time>
-        <timeUnit>1</timeUnit>
-        <orientation>1</orientation>
-      </toolspecific>
-    </transition>
     <transition id="t8_op_2">
       <name>
-        <text>Check investigation result</text>
+        <text>Register &amp; check investigation result</text>
         <graphics>
-          <offset x="2210" y="270"/>
+          <offset x="1620" y="440"/>
         </graphics>
       </name>
       <graphics>
-        <position x="2210" y="230"/>
+        <position x="1625" y="400"/>
         <dimension x="40" y="40"/>
       </graphics>
       <toolspecific tool="WoPeD" version="1.0">
+        <trigger id="" type="200">
+          <graphics>
+            <position x="1635" y="378"/>
+            <dimension x="24" y="22"/>
+          </graphics>
+        </trigger>
         <operator id="t8" type="104"/>
-        <time>0</time>
+        <time>20</time>
         <timeUnit>1</timeUnit>
         <orientation>1</orientation>
       </toolspecific>
     </transition>
     <transition id="t8_op_1">
       <name>
-        <text>Check investigation result</text>
+        <text>Register &amp; check investigation result</text>
         <graphics>
-          <offset x="2210" y="270"/>
+          <offset x="1620" y="440"/>
         </graphics>
       </name>
       <graphics>
-        <position x="2210" y="230"/>
+        <position x="1625" y="400"/>
         <dimension x="40" y="40"/>
       </graphics>
       <toolspecific tool="WoPeD" version="1.0">
+        <trigger id="" type="200">
+          <graphics>
+            <position x="1635" y="378"/>
+            <dimension x="24" y="22"/>
+          </graphics>
+        </trigger>
         <operator id="t8" type="104"/>
-        <time>0</time>
+        <time>20</time>
         <timeUnit>1</timeUnit>
         <orientation>1</orientation>
       </toolspecific>
     </transition>
     <transition id="t9_op_1">
       <name>
-        <text>Check credit result</text>
+        <text>Register &amp; check credit result</text>
         <graphics>
-          <offset x="620" y="290"/>
+          <offset x="420" y="240"/>
         </graphics>
       </name>
       <graphics>
-        <position x="620" y="251"/>
+        <position x="425" y="200"/>
         <dimension x="40" y="40"/>
       </graphics>
       <toolspecific tool="WoPeD" version="1.0">
+        <trigger id="" type="201">
+          <graphics>
+            <position x="435" y="178"/>
+            <dimension x="24" y="22"/>
+          </graphics>
+        </trigger>
         <operator id="t9" type="104"/>
         <time>0</time>
         <timeUnit>1</timeUnit>
@@ -1183,16 +1122,22 @@ Manual editing may break compatibility.-->
     </transition>
     <transition id="t9_op_2">
       <name>
-        <text>Check credit result</text>
+        <text>Register &amp; check credit result</text>
         <graphics>
-          <offset x="620" y="290"/>
+          <offset x="420" y="240"/>
         </graphics>
       </name>
       <graphics>
-        <position x="620" y="251"/>
+        <position x="425" y="200"/>
         <dimension x="40" y="40"/>
       </graphics>
       <toolspecific tool="WoPeD" version="1.0">
+        <trigger id="" type="201">
+          <graphics>
+            <position x="435" y="178"/>
+            <dimension x="24" y="22"/>
+          </graphics>
+        </trigger>
         <operator id="t9" type="104"/>
         <time>0</time>
         <timeUnit>1</timeUnit>
@@ -1203,15 +1148,120 @@ Manual editing may break compatibility.-->
       <name>
         <text>Merge 2nd parallel task</text>
         <graphics>
-          <offset x="2790" y="360"/>
+          <offset x="2370" y="440"/>
         </graphics>
       </name>
       <graphics>
-        <position x="2790" y="320"/>
+        <position x="2375" y="400"/>
         <dimension x="40" y="40"/>
       </graphics>
       <toolspecific tool="WoPeD" version="1.0">
         <operator id="t30" type="102"/>
+        <time>0</time>
+        <timeUnit>1</timeUnit>
+        <orientation>3</orientation>
+      </toolspecific>
+    </transition>
+    <transition id="t32">
+      <name>
+        <text>Inform customer</text>
+        <graphics>
+          <offset x="1920" y="440"/>
+        </graphics>
+      </name>
+      <graphics>
+        <position x="1925" y="400"/>
+        <dimension x="40" y="40"/>
+      </graphics>
+      <toolspecific tool="WoPeD" version="1.0">
+        <trigger id="" type="200">
+          <graphics>
+            <position x="1935" y="378"/>
+            <dimension x="24" y="22"/>
+          </graphics>
+        </trigger>
+        <transitionResource organizationalUnitName="Stockholm Branch" roleName="CRM Officer">
+          <graphics>
+            <position x="1920" y="355"/>
+            <dimension x="60" y="22"/>
+          </graphics>
+        </transitionResource>
+        <time>10</time>
+        <timeUnit>1</timeUnit>
+        <orientation>1</orientation>
+      </toolspecific>
+    </transition>
+    <transition id="t31">
+      <name>
+        <text>Enable full access</text>
+        <graphics>
+          <offset x="1920" y="340"/>
+        </graphics>
+      </name>
+      <graphics>
+        <position x="1925" y="300"/>
+        <dimension x="40" y="40"/>
+      </graphics>
+      <toolspecific tool="WoPeD" version="1.0">
+        <trigger id="" type="200">
+          <graphics>
+            <position x="1935" y="278"/>
+            <dimension x="24" y="22"/>
+          </graphics>
+        </trigger>
+        <transitionResource organizationalUnitName="Stockholm Branch" roleName="Accounting Assistant">
+          <graphics>
+            <position x="1920" y="255"/>
+            <dimension x="60" y="22"/>
+          </graphics>
+        </transitionResource>
+        <time>10</time>
+        <timeUnit>1</timeUnit>
+        <orientation>1</orientation>
+      </toolspecific>
+    </transition>
+    <transition id="t34">
+      <name>
+        <text>Manual registration</text>
+        <graphics>
+          <offset x="120" y="240"/>
+        </graphics>
+      </name>
+      <graphics>
+        <position x="125" y="200"/>
+        <dimension x="40" y="40"/>
+      </graphics>
+      <toolspecific tool="WoPeD" version="1.0">
+        <trigger id="" type="200">
+          <graphics>
+            <position x="135" y="178"/>
+            <dimension x="24" y="22"/>
+          </graphics>
+        </trigger>
+        <transitionResource organizationalUnitName="Stockholm Branch" roleName="Credit Investigator">
+          <graphics>
+            <position x="120" y="155"/>
+            <dimension x="60" y="22"/>
+          </graphics>
+        </transitionResource>
+        <time>20</time>
+        <timeUnit>1</timeUnit>
+        <orientation>1</orientation>
+      </toolspecific>
+    </transition>
+    <transition id="t33_op_1">
+      <name>
+        <text>Merge parallel task</text>
+        <graphics>
+          <offset x="2070" y="340"/>
+        </graphics>
+      </name>
+      <graphics>
+        <position x="2075" y="300"/>
+        <dimension x="40" y="40"/>
+      </graphics>
+      <toolspecific tool="WoPeD" version="1.0">
+        <operator id="t33" type="102"/>
         <time>0</time>
         <timeUnit>1</timeUnit>
         <orientation>3</orientation>
@@ -1273,48 +1323,6 @@ Manual editing may break compatibility.-->
         <displayProbabilityPosition x="500.0" y="12.0"/>
       </toolspecific>
     </arc>
-    <arc id="a36" source="p23" target="t11">
-      <inscription>
-        <text>1</text>
-        <graphics>
-          <offset x="500.0" y="-12.0"/>
-        </graphics>
-      </inscription>
-      <graphics/>
-      <toolspecific tool="WoPeD" version="1.0">
-        <probability>1.0</probability>
-        <displayProbabilityOn>false</displayProbabilityOn>
-        <displayProbabilityPosition x="500.0" y="12.0"/>
-      </toolspecific>
-    </arc>
-    <arc id="a39" source="p15" target="t17">
-      <inscription>
-        <text>1</text>
-        <graphics>
-          <offset x="500.0" y="-12.0"/>
-        </graphics>
-      </inscription>
-      <graphics/>
-      <toolspecific tool="WoPeD" version="1.0">
-        <probability>1.0</probability>
-        <displayProbabilityOn>false</displayProbabilityOn>
-        <displayProbabilityPosition x="500.0" y="12.0"/>
-      </toolspecific>
-    </arc>
-    <arc id="a38" source="t11" target="p24">
-      <inscription>
-        <text>1</text>
-        <graphics>
-          <offset x="500.0" y="-12.0"/>
-        </graphics>
-      </inscription>
-      <graphics/>
-      <toolspecific tool="WoPeD" version="1.0">
-        <probability>1.0</probability>
-        <displayProbabilityOn>false</displayProbabilityOn>
-        <displayProbabilityPosition x="500.0" y="12.0"/>
-      </toolspecific>
-    </arc>
     <arc id="a80" source="t28" target="p34">
       <inscription>
         <text>1</text>
@@ -1329,7 +1337,21 @@ Manual editing may break compatibility.-->
         <displayProbabilityPosition x="500.0" y="12.0"/>
       </toolspecific>
     </arc>
-    <arc id="a40" source="t17" target="p16">
+    <arc id="a206" source="p1" target="t34">
+      <inscription>
+        <text>1</text>
+        <graphics>
+          <offset x="500.0" y="-12.0"/>
+        </graphics>
+      </inscription>
+      <graphics/>
+      <toolspecific tool="WoPeD" version="1.0">
+        <probability>0.5</probability>
+        <displayProbabilityOn>true</displayProbabilityOn>
+        <displayProbabilityPosition x="500.0" y="12.0"/>
+      </toolspecific>
+    </arc>
+    <arc id="a84" source="p31" target="t20">
       <inscription>
         <text>1</text>
         <graphics>
@@ -1343,7 +1365,7 @@ Manual editing may break compatibility.-->
         <displayProbabilityPosition x="500.0" y="12.0"/>
       </toolspecific>
     </arc>
-    <arc id="a42" source="p24" target="t22">
+    <arc id="a83" source="p10" target="t21">
       <inscription>
         <text>1</text>
         <graphics>
@@ -1357,32 +1379,14 @@ Manual editing may break compatibility.-->
         <displayProbabilityPosition x="500.0" y="12.0"/>
       </toolspecific>
     </arc>
-    <arc id="a88" source="t21" target="p35">
+    <arc id="a86" source="t21" target="p3">
       <inscription>
         <text>1</text>
         <graphics>
           <offset x="500.0" y="-12.0"/>
         </graphics>
       </inscription>
-      <graphics>
-        <position x="2898" y="71"/>
-      </graphics>
-      <toolspecific tool="WoPeD" version="1.0">
-        <probability>1.0</probability>
-        <displayProbabilityOn>false</displayProbabilityOn>
-        <displayProbabilityPosition x="500.0" y="12.0"/>
-      </toolspecific>
-    </arc>
-    <arc id="a87" source="t22" target="p35">
-      <inscription>
-        <text>1</text>
-        <graphics>
-          <offset x="500.0" y="-12.0"/>
-        </graphics>
-      </inscription>
-      <graphics>
-        <position x="2866" y="175"/>
-      </graphics>
+      <graphics/>
       <toolspecific tool="WoPeD" version="1.0">
         <probability>1.0</probability>
         <displayProbabilityOn>false</displayProbabilityOn>
@@ -1397,7 +1401,7 @@ Manual editing may break compatibility.-->
         </graphics>
       </inscription>
       <graphics>
-        <position x="2898" y="490"/>
+        <position x="2395" y="120"/>
       </graphics>
       <toolspecific tool="WoPeD" version="1.0">
         <probability>1.0</probability>
@@ -1406,34 +1410,6 @@ Manual editing may break compatibility.-->
       </toolspecific>
     </arc>
     <arc id="a48" source="p18" target="t19">
-      <inscription>
-        <text>1</text>
-        <graphics>
-          <offset x="500.0" y="-12.0"/>
-        </graphics>
-      </inscription>
-      <graphics/>
-      <toolspecific tool="WoPeD" version="1.0">
-        <probability>1.0</probability>
-        <displayProbabilityOn>false</displayProbabilityOn>
-        <displayProbabilityPosition x="500.0" y="12.0"/>
-      </toolspecific>
-    </arc>
-    <arc id="a49" source="p17" target="t20">
-      <inscription>
-        <text>1</text>
-        <graphics>
-          <offset x="500.0" y="-12.0"/>
-        </graphics>
-      </inscription>
-      <graphics/>
-      <toolspecific tool="WoPeD" version="1.0">
-        <probability>1.0</probability>
-        <displayProbabilityOn>false</displayProbabilityOn>
-        <displayProbabilityPosition x="500.0" y="12.0"/>
-      </toolspecific>
-    </arc>
-    <arc id="a51" source="p19" target="t21">
       <inscription>
         <text>1</text>
         <graphics>
@@ -1482,7 +1458,9 @@ Manual editing may break compatibility.-->
           <offset x="500.0" y="-12.0"/>
         </graphics>
       </inscription>
-      <graphics/>
+      <graphics>
+        <position x="1420" y="420"/>
+      </graphics>
       <toolspecific tool="WoPeD" version="1.0">
         <probability>1.0</probability>
         <displayProbabilityOn>false</displayProbabilityOn>
@@ -1517,7 +1495,7 @@ Manual editing may break compatibility.-->
         <displayProbabilityPosition x="500.0" y="12.0"/>
       </toolspecific>
     </arc>
-    <arc id="a19" source="t7" target="p21">
+    <arc id="a104" source="t31" target="p38">
       <inscription>
         <text>1</text>
         <graphics>
@@ -1531,7 +1509,7 @@ Manual editing may break compatibility.-->
         <displayProbabilityPosition x="500.0" y="12.0"/>
       </toolspecific>
     </arc>
-    <arc id="a18" source="p7" target="t7">
+    <arc id="a105" source="t32" target="p39">
       <inscription>
         <text>1</text>
         <graphics>
@@ -1587,7 +1565,35 @@ Manual editing may break compatibility.-->
         <displayProbabilityPosition x="500.0" y="12.0"/>
       </toolspecific>
     </arc>
+    <arc id="a102" source="p36" target="t31">
+      <inscription>
+        <text>1</text>
+        <graphics>
+          <offset x="500.0" y="-12.0"/>
+        </graphics>
+      </inscription>
+      <graphics/>
+      <toolspecific tool="WoPeD" version="1.0">
+        <probability>1.0</probability>
+        <displayProbabilityOn>false</displayProbabilityOn>
+        <displayProbabilityPosition x="500.0" y="12.0"/>
+      </toolspecific>
+    </arc>
     <arc id="a63" source="t26" target="p29">
+      <inscription>
+        <text>1</text>
+        <graphics>
+          <offset x="500.0" y="-12.0"/>
+        </graphics>
+      </inscription>
+      <graphics/>
+      <toolspecific tool="WoPeD" version="1.0">
+        <probability>1.0</probability>
+        <displayProbabilityOn>false</displayProbabilityOn>
+        <displayProbabilityPosition x="500.0" y="12.0"/>
+      </toolspecific>
+    </arc>
+    <arc id="a103" source="p37" target="t32">
       <inscription>
         <text>1</text>
         <graphics>
@@ -1652,8 +1658,8 @@ Manual editing may break compatibility.-->
       </inscription>
       <graphics/>
       <toolspecific tool="WoPeD" version="1.0">
-        <probability>1.0</probability>
-        <displayProbabilityOn>false</displayProbabilityOn>
+        <probability>0.5</probability>
+        <displayProbabilityOn>true</displayProbabilityOn>
         <displayProbabilityPosition x="500.0" y="12.0"/>
       </toolspecific>
     </arc>
@@ -1699,21 +1705,7 @@ Manual editing may break compatibility.-->
         <displayProbabilityPosition x="500.0" y="12.0"/>
       </toolspecific>
     </arc>
-    <arc id="a7" source="p5" target="t6">
-      <inscription>
-        <text>1</text>
-        <graphics>
-          <offset x="500.0" y="-12.0"/>
-        </graphics>
-      </inscription>
-      <graphics/>
-      <toolspecific tool="WoPeD" version="1.0">
-        <probability>1.0</probability>
-        <displayProbabilityOn>false</displayProbabilityOn>
-        <displayProbabilityPosition x="500.0" y="12.0"/>
-      </toolspecific>
-    </arc>
-    <arc id="a8" source="t6" target="p6">
+    <arc id="a219" source="t34" target="p4">
       <inscription>
         <text>1</text>
         <graphics>
@@ -1755,7 +1747,219 @@ Manual editing may break compatibility.-->
         <displayProbabilityPosition x="500.0" y="12.0"/>
       </toolspecific>
     </arc>
-    <arc id="a55" source="t24_op_1" target="p26">
+    <arc id="a3" source="t23_op_1" target="p2">
+      <inscription>
+        <text>1</text>
+        <graphics>
+          <offset x="500.0" y="-12.0"/>
+        </graphics>
+      </inscription>
+      <graphics/>
+      <toolspecific tool="WoPeD" version="1.0">
+        <probability>0.9</probability>
+        <displayProbabilityOn>true</displayProbabilityOn>
+        <displayProbabilityPosition x="500.0" y="12.0"/>
+      </toolspecific>
+    </arc>
+    <arc id="a57" source="t23_op_2" target="p22">
+      <inscription>
+        <text>1</text>
+        <graphics>
+          <offset x="500.0" y="-12.0"/>
+        </graphics>
+      </inscription>
+      <graphics/>
+      <toolspecific tool="WoPeD" version="1.0">
+        <probability>0.1</probability>
+        <displayProbabilityOn>true</displayProbabilityOn>
+        <displayProbabilityPosition x="500.0" y="12.0"/>
+      </toolspecific>
+    </arc>
+    <arc id="a9" source="p20" target="t23_op_1">
+      <inscription>
+        <text>1</text>
+        <graphics>
+          <offset x="500.0" y="-12.0"/>
+        </graphics>
+      </inscription>
+      <graphics/>
+      <toolspecific tool="WoPeD" version="1.0">
+        <probability>1.0</probability>
+        <displayProbabilityOn>false</displayProbabilityOn>
+        <displayProbabilityPosition x="500.0" y="12.0"/>
+      </toolspecific>
+    </arc>
+    <arc id="a9" source="p20" target="t23_op_2">
+      <inscription>
+        <text>1</text>
+        <graphics>
+          <offset x="500.0" y="-12.0"/>
+        </graphics>
+      </inscription>
+      <graphics/>
+      <toolspecific tool="WoPeD" version="1.0">
+        <probability>1.0</probability>
+        <displayProbabilityOn>false</displayProbabilityOn>
+        <displayProbabilityPosition x="500.0" y="12.0"/>
+      </toolspecific>
+    </arc>
+    <arc id="a33" source="p13" target="t16_op_1">
+      <inscription>
+        <text>1</text>
+        <graphics>
+          <offset x="500.0" y="-12.0"/>
+        </graphics>
+      </inscription>
+      <graphics/>
+      <toolspecific tool="WoPeD" version="1.0">
+        <probability>1.0</probability>
+        <displayProbabilityOn>false</displayProbabilityOn>
+        <displayProbabilityPosition x="500.0" y="12.0"/>
+      </toolspecific>
+    </arc>
+    <arc id="a34" source="p14" target="t16_op_1">
+      <inscription>
+        <text>1</text>
+        <graphics>
+          <offset x="500.0" y="-12.0"/>
+        </graphics>
+      </inscription>
+      <graphics/>
+      <toolspecific tool="WoPeD" version="1.0">
+        <probability>1.0</probability>
+        <displayProbabilityOn>false</displayProbabilityOn>
+        <displayProbabilityPosition x="500.0" y="12.0"/>
+      </toolspecific>
+    </arc>
+    <arc id="a28" source="t16_op_1" target="p24">
+      <inscription>
+        <text>1</text>
+        <graphics>
+          <offset x="500.0" y="-12.0"/>
+        </graphics>
+      </inscription>
+      <graphics/>
+      <toolspecific tool="WoPeD" version="1.0">
+        <probability>1.0</probability>
+        <displayProbabilityOn>false</displayProbabilityOn>
+        <displayProbabilityPosition x="500.0" y="12.0"/>
+      </toolspecific>
+    </arc>
+    <arc id="a71" source="p3" target="t10_op_1">
+      <inscription>
+        <text>1</text>
+        <graphics>
+          <offset x="500.0" y="-12.0"/>
+        </graphics>
+      </inscription>
+      <graphics/>
+      <toolspecific tool="WoPeD" version="1.0">
+        <probability>1.0</probability>
+        <displayProbabilityOn>false</displayProbabilityOn>
+        <displayProbabilityPosition x="500.0" y="12.0"/>
+      </toolspecific>
+    </arc>
+    <arc id="a90" source="t10_op_1" target="p35">
+      <inscription>
+        <text>1</text>
+        <graphics>
+          <offset x="500.0" y="-12.0"/>
+        </graphics>
+      </inscription>
+      <graphics/>
+      <toolspecific tool="WoPeD" version="1.0">
+        <probability>1.0</probability>
+        <displayProbabilityOn>false</displayProbabilityOn>
+        <displayProbabilityPosition x="500.0" y="12.0"/>
+      </toolspecific>
+    </arc>
+    <arc id="a92" source="p19" target="t10_op_1">
+      <inscription>
+        <text>1</text>
+        <graphics>
+          <offset x="500.0" y="-12.0"/>
+        </graphics>
+      </inscription>
+      <graphics/>
+      <toolspecific tool="WoPeD" version="1.0">
+        <probability>1.0</probability>
+        <displayProbabilityOn>false</displayProbabilityOn>
+        <displayProbabilityPosition x="500.0" y="12.0"/>
+      </toolspecific>
+    </arc>
+    <arc id="a106" source="p38" target="t33_op_1">
+      <inscription>
+        <text>1</text>
+        <graphics>
+          <offset x="500.0" y="-12.0"/>
+        </graphics>
+      </inscription>
+      <graphics/>
+      <toolspecific tool="WoPeD" version="1.0">
+        <probability>1.0</probability>
+        <displayProbabilityOn>false</displayProbabilityOn>
+        <displayProbabilityPosition x="500.0" y="12.0"/>
+      </toolspecific>
+    </arc>
+    <arc id="a107" source="p39" target="t33_op_1">
+      <inscription>
+        <text>1</text>
+        <graphics>
+          <offset x="500.0" y="-12.0"/>
+        </graphics>
+      </inscription>
+      <graphics/>
+      <toolspecific tool="WoPeD" version="1.0">
+        <probability>1.0</probability>
+        <displayProbabilityOn>false</displayProbabilityOn>
+        <displayProbabilityPosition x="500.0" y="12.0"/>
+      </toolspecific>
+    </arc>
+    <arc id="a110" source="t33_op_1" target="p35">
+      <inscription>
+        <text>1</text>
+        <graphics>
+          <offset x="500.0" y="-12.0"/>
+        </graphics>
+      </inscription>
+      <graphics>
+        <position x="2395" y="320"/>
+      </graphics>
+      <toolspecific tool="WoPeD" version="1.0">
+        <probability>1.0</probability>
+        <displayProbabilityOn>false</displayProbabilityOn>
+        <displayProbabilityPosition x="500.0" y="12.0"/>
+      </toolspecific>
+    </arc>
+    <arc id="a72" source="t2_op_1" target="p10">
+      <inscription>
+        <text>1</text>
+        <graphics>
+          <offset x="500.0" y="-12.0"/>
+        </graphics>
+      </inscription>
+      <graphics/>
+      <toolspecific tool="WoPeD" version="1.0">
+        <probability>1.0</probability>
+        <displayProbabilityOn>false</displayProbabilityOn>
+        <displayProbabilityPosition x="500.0" y="12.0"/>
+      </toolspecific>
+    </arc>
+    <arc id="a74" source="t2_op_1" target="p31">
+      <inscription>
+        <text>1</text>
+        <graphics>
+          <offset x="500.0" y="-12.0"/>
+        </graphics>
+      </inscription>
+      <graphics/>
+      <toolspecific tool="WoPeD" version="1.0">
+        <probability>1.0</probability>
+        <displayProbabilityOn>false</displayProbabilityOn>
+        <displayProbabilityPosition x="500.0" y="12.0"/>
+      </toolspecific>
+    </arc>
+    <arc id="a67" source="p17" target="t2_op_1">
       <inscription>
         <text>1</text>
         <graphics>
@@ -1797,371 +2001,7 @@ Manual editing may break compatibility.-->
         <displayProbabilityPosition x="500.0" y="12.0"/>
       </toolspecific>
     </arc>
-    <arc id="a70" source="t27_op_1" target="p30">
-      <inscription>
-        <text>1</text>
-        <graphics>
-          <offset x="500.0" y="-12.0"/>
-        </graphics>
-      </inscription>
-      <graphics/>
-      <toolspecific tool="WoPeD" version="1.0">
-        <probability>1.0</probability>
-        <displayProbabilityOn>false</displayProbabilityOn>
-        <displayProbabilityPosition x="500.0" y="12.0"/>
-      </toolspecific>
-    </arc>
-    <arc id="a64" source="p29" target="t27_op_1">
-      <inscription>
-        <text>1</text>
-        <graphics>
-          <offset x="500.0" y="-12.0"/>
-        </graphics>
-      </inscription>
-      <graphics/>
-      <toolspecific tool="WoPeD" version="1.0">
-        <probability>1.0</probability>
-        <displayProbabilityOn>false</displayProbabilityOn>
-        <displayProbabilityPosition x="500.0" y="12.0"/>
-      </toolspecific>
-    </arc>
-    <arc id="a75" source="t27_op_1" target="p32">
-      <inscription>
-        <text>1</text>
-        <graphics>
-          <offset x="500.0" y="5.721112051394584"/>
-        </graphics>
-      </inscription>
-      <graphics/>
-      <toolspecific tool="WoPeD" version="1.0">
-        <probability>1.0</probability>
-        <displayProbabilityOn>false</displayProbabilityOn>
-        <displayProbabilityPosition x="1000.0" y="5.0"/>
-      </toolspecific>
-    </arc>
-    <arc id="a65" source="p28" target="t27_op_1">
-      <inscription>
-        <text>1</text>
-        <graphics>
-          <offset x="500.0" y="-12.0"/>
-        </graphics>
-      </inscription>
-      <graphics/>
-      <toolspecific tool="WoPeD" version="1.0">
-        <probability>1.0</probability>
-        <displayProbabilityOn>false</displayProbabilityOn>
-        <displayProbabilityPosition x="500.0" y="12.0"/>
-      </toolspecific>
-    </arc>
-    <arc id="a20" source="p21" target="t8_op_1">
-      <inscription>
-        <text>1</text>
-        <graphics>
-          <offset x="500.0" y="-12.0"/>
-        </graphics>
-      </inscription>
-      <graphics/>
-      <toolspecific tool="WoPeD" version="1.0">
-        <probability>1.0</probability>
-        <displayProbabilityOn>false</displayProbabilityOn>
-        <displayProbabilityPosition x="500.0" y="12.0"/>
-      </toolspecific>
-    </arc>
-    <arc id="a44" source="t8_op_2" target="p25">
-      <inscription>
-        <text>1</text>
-        <graphics>
-          <offset x="500.0" y="-12.0"/>
-        </graphics>
-      </inscription>
-      <graphics/>
-      <toolspecific tool="WoPeD" version="1.0">
-        <probability>0.1</probability>
-        <displayProbabilityOn>true</displayProbabilityOn>
-        <displayProbabilityPosition x="500.0" y="12.0"/>
-      </toolspecific>
-    </arc>
-    <arc id="a26" source="t8_op_1" target="p23">
-      <inscription>
-        <text>1</text>
-        <graphics>
-          <offset x="500.0" y="-12.0"/>
-        </graphics>
-      </inscription>
-      <graphics/>
-      <toolspecific tool="WoPeD" version="1.0">
-        <probability>0.9</probability>
-        <displayProbabilityOn>true</displayProbabilityOn>
-        <displayProbabilityPosition x="500.0" y="12.0"/>
-      </toolspecific>
-    </arc>
-    <arc id="a20" source="p21" target="t8_op_2">
-      <inscription>
-        <text>1</text>
-        <graphics>
-          <offset x="500.0" y="-12.0"/>
-        </graphics>
-      </inscription>
-      <graphics/>
-      <toolspecific tool="WoPeD" version="1.0">
-        <probability>1.0</probability>
-        <displayProbabilityOn>false</displayProbabilityOn>
-        <displayProbabilityPosition x="500.0" y="12.0"/>
-      </toolspecific>
-    </arc>
-    <arc id="a41" source="p16" target="t18_op_2">
-      <inscription>
-        <text>1</text>
-        <graphics>
-          <offset x="500.0" y="-12.0"/>
-        </graphics>
-      </inscription>
-      <graphics/>
-      <toolspecific tool="WoPeD" version="1.0">
-        <probability>1.0</probability>
-        <displayProbabilityOn>false</displayProbabilityOn>
-        <displayProbabilityPosition x="500.0" y="12.0"/>
-      </toolspecific>
-    </arc>
-    <arc id="a41" source="p16" target="t18_op_1">
-      <inscription>
-        <text>1</text>
-        <graphics>
-          <offset x="500.0" y="-12.0"/>
-        </graphics>
-      </inscription>
-      <graphics/>
-      <toolspecific tool="WoPeD" version="1.0">
-        <probability>1.0</probability>
-        <displayProbabilityOn>false</displayProbabilityOn>
-        <displayProbabilityPosition x="500.0" y="12.0"/>
-      </toolspecific>
-    </arc>
-    <arc id="a45" source="t18_op_1" target="p18">
-      <inscription>
-        <text>1</text>
-        <graphics>
-          <offset x="500.0" y="-12.0"/>
-        </graphics>
-      </inscription>
-      <graphics/>
-      <toolspecific tool="WoPeD" version="1.0">
-        <probability>0.2</probability>
-        <displayProbabilityOn>true</displayProbabilityOn>
-        <displayProbabilityPosition x="500.0" y="12.0"/>
-      </toolspecific>
-    </arc>
-    <arc id="a43" source="t18_op_2" target="p17">
-      <inscription>
-        <text>1</text>
-        <graphics>
-          <offset x="500.0" y="-12.0"/>
-        </graphics>
-      </inscription>
-      <graphics/>
-      <toolspecific tool="WoPeD" version="1.0">
-        <probability>0.8</probability>
-        <displayProbabilityOn>true</displayProbabilityOn>
-        <displayProbabilityPosition x="500.0" y="12.0"/>
-      </toolspecific>
-    </arc>
-    <arc id="a85" source="t30_op_1" target="p35">
-      <inscription>
-        <text>1</text>
-        <graphics>
-          <offset x="500.0" y="-12.0"/>
-        </graphics>
-      </inscription>
-      <graphics/>
-      <toolspecific tool="WoPeD" version="1.0">
-        <probability>1.0</probability>
-        <displayProbabilityOn>false</displayProbabilityOn>
-        <displayProbabilityPosition x="500.0" y="12.0"/>
-      </toolspecific>
-    </arc>
-    <arc id="a82" source="p34" target="t30_op_1">
-      <inscription>
-        <text>1</text>
-        <graphics>
-          <offset x="500.0" y="-12.0"/>
-        </graphics>
-      </inscription>
-      <graphics/>
-      <toolspecific tool="WoPeD" version="1.0">
-        <probability>1.0</probability>
-        <displayProbabilityOn>false</displayProbabilityOn>
-        <displayProbabilityPosition x="500.0" y="12.0"/>
-      </toolspecific>
-    </arc>
-    <arc id="a81" source="p33" target="t30_op_1">
-      <inscription>
-        <text>1</text>
-        <graphics>
-          <offset x="500.0" y="-12.0"/>
-        </graphics>
-      </inscription>
-      <graphics/>
-      <toolspecific tool="WoPeD" version="1.0">
-        <probability>1.0</probability>
-        <displayProbabilityOn>false</displayProbabilityOn>
-        <displayProbabilityPosition x="500.0" y="12.0"/>
-      </toolspecific>
-    </arc>
-    <arc id="a9" source="p20" target="t23_op_1">
-      <inscription>
-        <text>1</text>
-        <graphics>
-          <offset x="500.0" y="-12.0"/>
-        </graphics>
-      </inscription>
-      <graphics/>
-      <toolspecific tool="WoPeD" version="1.0">
-        <probability>1.0</probability>
-        <displayProbabilityOn>false</displayProbabilityOn>
-        <displayProbabilityPosition x="500.0" y="12.0"/>
-      </toolspecific>
-    </arc>
-    <arc id="a9" source="p20" target="t23_op_2">
-      <inscription>
-        <text>1</text>
-        <graphics>
-          <offset x="500.0" y="-12.0"/>
-        </graphics>
-      </inscription>
-      <graphics/>
-      <toolspecific tool="WoPeD" version="1.0">
-        <probability>1.0</probability>
-        <displayProbabilityOn>false</displayProbabilityOn>
-        <displayProbabilityPosition x="500.0" y="12.0"/>
-      </toolspecific>
-    </arc>
-    <arc id="a3" source="t23_op_1" target="p2">
-      <inscription>
-        <text>1</text>
-        <graphics>
-          <offset x="500.0" y="-12.0"/>
-        </graphics>
-      </inscription>
-      <graphics/>
-      <toolspecific tool="WoPeD" version="1.0">
-        <probability>0.9</probability>
-        <displayProbabilityOn>true</displayProbabilityOn>
-        <displayProbabilityPosition x="500.0" y="12.0"/>
-      </toolspecific>
-    </arc>
-    <arc id="a57" source="t23_op_2" target="p22">
-      <inscription>
-        <text>1</text>
-        <graphics>
-          <offset x="500.0" y="-12.0"/>
-        </graphics>
-      </inscription>
-      <graphics/>
-      <toolspecific tool="WoPeD" version="1.0">
-        <probability>0.1</probability>
-        <displayProbabilityOn>true</displayProbabilityOn>
-        <displayProbabilityPosition x="500.0" y="12.0"/>
-      </toolspecific>
-    </arc>
-    <arc id="a12" source="p6" target="t9_op_2">
-      <inscription>
-        <text>1</text>
-        <graphics>
-          <offset x="500.0" y="-12.0"/>
-        </graphics>
-      </inscription>
-      <graphics/>
-      <toolspecific tool="WoPeD" version="1.0">
-        <probability>1.0</probability>
-        <displayProbabilityOn>false</displayProbabilityOn>
-        <displayProbabilityPosition x="500.0" y="12.0"/>
-      </toolspecific>
-    </arc>
-    <arc id="a16" source="t9_op_1" target="p9">
-      <inscription>
-        <text>1</text>
-        <graphics>
-          <offset x="500.0" y="-12.0"/>
-        </graphics>
-      </inscription>
-      <graphics/>
-      <toolspecific tool="WoPeD" version="1.0">
-        <probability>0.2</probability>
-        <displayProbabilityOn>true</displayProbabilityOn>
-        <displayProbabilityPosition x="500.0" y="12.0"/>
-      </toolspecific>
-    </arc>
-    <arc id="a12" source="p6" target="t9_op_1">
-      <inscription>
-        <text>1</text>
-        <graphics>
-          <offset x="500.0" y="-12.0"/>
-        </graphics>
-      </inscription>
-      <graphics/>
-      <toolspecific tool="WoPeD" version="1.0">
-        <probability>1.0</probability>
-        <displayProbabilityOn>false</displayProbabilityOn>
-        <displayProbabilityPosition x="500.0" y="12.0"/>
-      </toolspecific>
-    </arc>
-    <arc id="a14" source="t9_op_2" target="p8">
-      <inscription>
-        <text>1</text>
-        <graphics>
-          <offset x="500.0" y="-12.0"/>
-        </graphics>
-      </inscription>
-      <graphics/>
-      <toolspecific tool="WoPeD" version="1.0">
-        <probability>0.8</probability>
-        <displayProbabilityOn>true</displayProbabilityOn>
-        <displayProbabilityPosition x="500.0" y="12.0"/>
-      </toolspecific>
-    </arc>
-    <arc id="a34" source="p14" target="t16_op_1">
-      <inscription>
-        <text>1</text>
-        <graphics>
-          <offset x="500.0" y="-12.0"/>
-        </graphics>
-      </inscription>
-      <graphics/>
-      <toolspecific tool="WoPeD" version="1.0">
-        <probability>1.0</probability>
-        <displayProbabilityOn>false</displayProbabilityOn>
-        <displayProbabilityPosition x="500.0" y="12.0"/>
-      </toolspecific>
-    </arc>
-    <arc id="a37" source="t16_op_1" target="p15">
-      <inscription>
-        <text>1</text>
-        <graphics>
-          <offset x="500.0" y="-12.0"/>
-        </graphics>
-      </inscription>
-      <graphics/>
-      <toolspecific tool="WoPeD" version="1.0">
-        <probability>1.0</probability>
-        <displayProbabilityOn>false</displayProbabilityOn>
-        <displayProbabilityPosition x="500.0" y="12.0"/>
-      </toolspecific>
-    </arc>
-    <arc id="a33" source="p13" target="t16_op_1">
-      <inscription>
-        <text>1</text>
-        <graphics>
-          <offset x="500.0" y="-12.0"/>
-        </graphics>
-      </inscription>
-      <graphics/>
-      <toolspecific tool="WoPeD" version="1.0">
-        <probability>1.0</probability>
-        <displayProbabilityOn>false</displayProbabilityOn>
-        <displayProbabilityPosition x="500.0" y="12.0"/>
-      </toolspecific>
-    </arc>
-    <arc id="a25" source="t13_op_1" target="p11">
+    <arc id="a55" source="t24_op_1" target="p26">
       <inscription>
         <text>1</text>
         <graphics>
@@ -2189,7 +2029,329 @@ Manual editing may break compatibility.-->
         <displayProbabilityPosition x="500.0" y="12.0"/>
       </toolspecific>
     </arc>
+    <arc id="a25" source="t13_op_1" target="p11">
+      <inscription>
+        <text>1</text>
+        <graphics>
+          <offset x="500.0" y="-12.0"/>
+        </graphics>
+      </inscription>
+      <graphics/>
+      <toolspecific tool="WoPeD" version="1.0">
+        <probability>1.0</probability>
+        <displayProbabilityOn>false</displayProbabilityOn>
+        <displayProbabilityPosition x="500.0" y="12.0"/>
+      </toolspecific>
+    </arc>
     <arc id="a23" source="p8" target="t13_op_1">
+      <inscription>
+        <text>1</text>
+        <graphics>
+          <offset x="500.0" y="-12.0"/>
+        </graphics>
+      </inscription>
+      <graphics/>
+      <toolspecific tool="WoPeD" version="1.0">
+        <probability>1.0</probability>
+        <displayProbabilityOn>false</displayProbabilityOn>
+        <displayProbabilityPosition x="500.0" y="12.0"/>
+      </toolspecific>
+    </arc>
+    <arc id="a45" source="t18_op_1" target="p18">
+      <inscription>
+        <text>1</text>
+        <graphics>
+          <offset x="500.0" y="-12.0"/>
+        </graphics>
+      </inscription>
+      <graphics/>
+      <toolspecific tool="WoPeD" version="1.0">
+        <probability>0.2</probability>
+        <displayProbabilityOn>true</displayProbabilityOn>
+        <displayProbabilityPosition x="500.0" y="12.0"/>
+      </toolspecific>
+    </arc>
+    <arc id="a37" source="p24" target="t18_op_2">
+      <inscription>
+        <text>1</text>
+        <graphics>
+          <offset x="500.0" y="-12.0"/>
+        </graphics>
+      </inscription>
+      <graphics/>
+      <toolspecific tool="WoPeD" version="1.0">
+        <probability>1.0</probability>
+        <displayProbabilityOn>false</displayProbabilityOn>
+        <displayProbabilityPosition x="500.0" y="12.0"/>
+      </toolspecific>
+    </arc>
+    <arc id="a37" source="p24" target="t18_op_1">
+      <inscription>
+        <text>1</text>
+        <graphics>
+          <offset x="500.0" y="-12.0"/>
+        </graphics>
+      </inscription>
+      <graphics/>
+      <toolspecific tool="WoPeD" version="1.0">
+        <probability>1.0</probability>
+        <displayProbabilityOn>false</displayProbabilityOn>
+        <displayProbabilityPosition x="500.0" y="12.0"/>
+      </toolspecific>
+    </arc>
+    <arc id="a43" source="t18_op_2" target="p17">
+      <inscription>
+        <text>1</text>
+        <graphics>
+          <offset x="500.0" y="-12.0"/>
+        </graphics>
+      </inscription>
+      <graphics/>
+      <toolspecific tool="WoPeD" version="1.0">
+        <probability>0.8</probability>
+        <displayProbabilityOn>true</displayProbabilityOn>
+        <displayProbabilityPosition x="500.0" y="12.0"/>
+      </toolspecific>
+    </arc>
+    <arc id="a44" source="t8_op_1" target="p25">
+      <inscription>
+        <text>1</text>
+        <graphics>
+          <offset x="500.0" y="-12.0"/>
+        </graphics>
+      </inscription>
+      <graphics/>
+      <toolspecific tool="WoPeD" version="1.0">
+        <probability>0.1</probability>
+        <displayProbabilityOn>true</displayProbabilityOn>
+        <displayProbabilityPosition x="500.0" y="12.0"/>
+      </toolspecific>
+    </arc>
+    <arc id="a823" source="p7" target="t8_op_2">
+      <inscription>
+        <text>1</text>
+        <graphics>
+          <offset x="500.0" y="-12.0"/>
+        </graphics>
+      </inscription>
+      <graphics/>
+      <toolspecific tool="WoPeD" version="1.0">
+        <probability>1.0</probability>
+        <displayProbabilityOn>false</displayProbabilityOn>
+        <displayProbabilityPosition x="500.0" y="12.0"/>
+      </toolspecific>
+    </arc>
+    <arc id="a823" source="p7" target="t8_op_1">
+      <inscription>
+        <text>1</text>
+        <graphics>
+          <offset x="500.0" y="-12.0"/>
+        </graphics>
+      </inscription>
+      <graphics/>
+      <toolspecific tool="WoPeD" version="1.0">
+        <probability>1.0</probability>
+        <displayProbabilityOn>false</displayProbabilityOn>
+        <displayProbabilityPosition x="500.0" y="12.0"/>
+      </toolspecific>
+    </arc>
+    <arc id="a26" source="t8_op_2" target="p23">
+      <inscription>
+        <text>1</text>
+        <graphics>
+          <offset x="500.0" y="-12.0"/>
+        </graphics>
+      </inscription>
+      <graphics/>
+      <toolspecific tool="WoPeD" version="1.0">
+        <probability>0.9</probability>
+        <displayProbabilityOn>true</displayProbabilityOn>
+        <displayProbabilityPosition x="500.0" y="12.0"/>
+      </toolspecific>
+    </arc>
+    <arc id="a65" source="p28" target="t27_op_1">
+      <inscription>
+        <text>1</text>
+        <graphics>
+          <offset x="500.0" y="-12.0"/>
+        </graphics>
+      </inscription>
+      <graphics/>
+      <toolspecific tool="WoPeD" version="1.0">
+        <probability>1.0</probability>
+        <displayProbabilityOn>false</displayProbabilityOn>
+        <displayProbabilityPosition x="500.0" y="12.0"/>
+      </toolspecific>
+    </arc>
+    <arc id="a64" source="p29" target="t27_op_1">
+      <inscription>
+        <text>1</text>
+        <graphics>
+          <offset x="500.0" y="-12.0"/>
+        </graphics>
+      </inscription>
+      <graphics/>
+      <toolspecific tool="WoPeD" version="1.0">
+        <probability>1.0</probability>
+        <displayProbabilityOn>false</displayProbabilityOn>
+        <displayProbabilityPosition x="500.0" y="12.0"/>
+      </toolspecific>
+    </arc>
+    <arc id="a70" source="t27_op_1" target="p30">
+      <inscription>
+        <text>1</text>
+        <graphics>
+          <offset x="500.0" y="-12.0"/>
+        </graphics>
+      </inscription>
+      <graphics/>
+      <toolspecific tool="WoPeD" version="1.0">
+        <probability>1.0</probability>
+        <displayProbabilityOn>false</displayProbabilityOn>
+        <displayProbabilityPosition x="500.0" y="12.0"/>
+      </toolspecific>
+    </arc>
+    <arc id="a75" source="t27_op_1" target="p32">
+      <inscription>
+        <text>1</text>
+        <graphics>
+          <offset x="500.0" y="5.721112051394584"/>
+        </graphics>
+      </inscription>
+      <graphics/>
+      <toolspecific tool="WoPeD" version="1.0">
+        <probability>1.0</probability>
+        <displayProbabilityOn>false</displayProbabilityOn>
+        <displayProbabilityPosition x="1000.0" y="5.0"/>
+      </toolspecific>
+    </arc>
+    <arc id="a98" source="t22_op_1" target="p36">
+      <inscription>
+        <text>1</text>
+        <graphics>
+          <offset x="500.0" y="-12.0"/>
+        </graphics>
+      </inscription>
+      <graphics/>
+      <toolspecific tool="WoPeD" version="1.0">
+        <probability>1.0</probability>
+        <displayProbabilityOn>false</displayProbabilityOn>
+        <displayProbabilityPosition x="500.0" y="12.0"/>
+      </toolspecific>
+    </arc>
+    <arc id="a96" source="p23" target="t22_op_1">
+      <inscription>
+        <text>1</text>
+        <graphics>
+          <offset x="500.0" y="-12.0"/>
+        </graphics>
+      </inscription>
+      <graphics/>
+      <toolspecific tool="WoPeD" version="1.0">
+        <probability>1.0</probability>
+        <displayProbabilityOn>false</displayProbabilityOn>
+        <displayProbabilityPosition x="500.0" y="12.0"/>
+      </toolspecific>
+    </arc>
+    <arc id="a100" source="t22_op_1" target="p37">
+      <inscription>
+        <text>1</text>
+        <graphics>
+          <offset x="500.0" y="-12.0"/>
+        </graphics>
+      </inscription>
+      <graphics/>
+      <toolspecific tool="WoPeD" version="1.0">
+        <probability>1.0</probability>
+        <displayProbabilityOn>false</displayProbabilityOn>
+        <displayProbabilityPosition x="500.0" y="12.0"/>
+      </toolspecific>
+    </arc>
+    <arc id="a14" source="t9_op_1" target="p8">
+      <inscription>
+        <text>1</text>
+        <graphics>
+          <offset x="500.0" y="-12.0"/>
+        </graphics>
+      </inscription>
+      <graphics/>
+      <toolspecific tool="WoPeD" version="1.0">
+        <probability>0.8</probability>
+        <displayProbabilityOn>true</displayProbabilityOn>
+        <displayProbabilityPosition x="500.0" y="12.0"/>
+      </toolspecific>
+    </arc>
+    <arc id="a788" source="p5" target="t9_op_2">
+      <inscription>
+        <text>1</text>
+        <graphics>
+          <offset x="500.0" y="-12.0"/>
+        </graphics>
+      </inscription>
+      <graphics/>
+      <toolspecific tool="WoPeD" version="1.0">
+        <probability>1.0</probability>
+        <displayProbabilityOn>false</displayProbabilityOn>
+        <displayProbabilityPosition x="500.0" y="12.0"/>
+      </toolspecific>
+    </arc>
+    <arc id="a788" source="p5" target="t9_op_1">
+      <inscription>
+        <text>1</text>
+        <graphics>
+          <offset x="500.0" y="-12.0"/>
+        </graphics>
+      </inscription>
+      <graphics/>
+      <toolspecific tool="WoPeD" version="1.0">
+        <probability>1.0</probability>
+        <displayProbabilityOn>false</displayProbabilityOn>
+        <displayProbabilityPosition x="500.0" y="12.0"/>
+      </toolspecific>
+    </arc>
+    <arc id="a16" source="t9_op_2" target="p9">
+      <inscription>
+        <text>1</text>
+        <graphics>
+          <offset x="500.0" y="-12.0"/>
+        </graphics>
+      </inscription>
+      <graphics/>
+      <toolspecific tool="WoPeD" version="1.0">
+        <probability>0.2</probability>
+        <displayProbabilityOn>true</displayProbabilityOn>
+        <displayProbabilityPosition x="500.0" y="12.0"/>
+      </toolspecific>
+    </arc>
+    <arc id="a85" source="t30_op_1" target="p35">
+      <inscription>
+        <text>1</text>
+        <graphics>
+          <offset x="500.0" y="-12.0"/>
+        </graphics>
+      </inscription>
+      <graphics/>
+      <toolspecific tool="WoPeD" version="1.0">
+        <probability>1.0</probability>
+        <displayProbabilityOn>false</displayProbabilityOn>
+        <displayProbabilityPosition x="500.0" y="12.0"/>
+      </toolspecific>
+    </arc>
+    <arc id="a81" source="p33" target="t30_op_1">
+      <inscription>
+        <text>1</text>
+        <graphics>
+          <offset x="500.0" y="-12.0"/>
+        </graphics>
+      </inscription>
+      <graphics/>
+      <toolspecific tool="WoPeD" version="1.0">
+        <probability>1.0</probability>
+        <displayProbabilityOn>false</displayProbabilityOn>
+        <displayProbabilityPosition x="500.0" y="12.0"/>
+      </toolspecific>
+    </arc>
+    <arc id="a82" source="p34" target="t30_op_1">
       <inscription>
         <text>1</text>
         <graphics>
@@ -2206,12 +2368,12 @@ Manual editing may break compatibility.-->
     <toolspecific tool="WoPeD" version="3.9.2">
       <bounds>
         <position x="2" y="26"/>
-        <dimension x="966" y="650"/>
+        <dimension x="1442" y="635"/>
       </bounds>
-      <scale>97</scale>
-      <treeWidthRight>718</treeWidthRight>
-      <overviewPanelVisible>true</overviewPanelVisible>
-      <treeHeightOverview>100</treeHeightOverview>
+      <scale>59</scale>
+      <treeWidthRight>1122</treeWidthRight>
+      <overviewPanelVisible>false</overviewPanelVisible>
+      <treeHeightOverview>1</treeHeightOverview>
       <treePanelVisible>true</treePanelVisible>
       <verticalLayout>false</verticalLayout>
       <resources>
@@ -2231,11 +2393,11 @@ Manual editing may break compatibility.-->
         <role Name="Dummy"/>
         <organizationUnit Name="Stockholm Branch"/>
         <resourceMapping resourceClass="CRM Officer" resourceID="Elin"/>
-        <resourceMapping resourceClass="CRM Officer" resourceID="Paul"/>
         <resourceMapping resourceClass="Credit Investigator" resourceID="Kim"/>
-        <resourceMapping resourceClass="Clerk" resourceID="Anna"/>
         <resourceMapping resourceClass="Fraud Investigator" resourceID="Peter"/>
         <resourceMapping resourceClass="Fraud Investigator" resourceID="Maria"/>
+        <resourceMapping resourceClass="Fraud Investigator" resourceID="Paul"/>
+        <resourceMapping resourceClass="Fraud Investigator" resourceID="Anna"/>
         <resourceMapping resourceClass="Stockholm Branch" resourceID="Paul"/>
         <resourceMapping resourceClass="Stockholm Branch" resourceID="Maria"/>
         <resourceMapping resourceClass="Stockholm Branch" resourceID="Peter"/>
